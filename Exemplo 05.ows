@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(149.0, 258.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import" version="" />
+		<node id="1" name="Select Columns" position="(329.0, 258.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns" version="" />
+		<node id="2" name="Tree" position="(499.0, 259.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" title="Tree" version="" />
+		<node id="3" name="Tree Viewer" position="(669.0, 261.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeGraph" title="Tree Viewer" version="" />
+		<node id="4" name="Data Table" position="(484.0, 79.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="5" name="Pythagorean Tree" position="(668.0, 384.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owpythagorastree.OWPythagorasTree" title="Pythagorean Tree" version="" />
+		<node id="6" name="Pythagorean Forest" position="(701.0, 504.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owpythagoreanforest.OWPythagoreanForest" title="Pythagorean Forest" version="" />
+		<node id="7" name="Random Forest" position="(512.0, 493.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owrandomforest.OWRandomForest" title="Random Forest" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Tree" sink_node_id="3" source_channel="Model" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="4" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="4" sink_channel="Tree" sink_node_id="5" source_channel="Model" source_node_id="2" />
+		<link enabled="true" id="5" sink_channel="Data" sink_node_id="7" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="6" sink_channel="Random Forest" sink_node_id="6" source_channel="Model" source_node_id="7" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('D:/OneDrive/Orange/orange_risco_inadimplencia.txt', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('D:/OneDrive/Orange/Acidentes_PRF.csv', {'encoding': 'utf-8', 'delimiter': ';', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 6, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'D:/OneDrive/Orange', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x04\x89\x00\x00\x01`\x00\x00\x05\xb4\x00\x00\x02\xc1\x00\x00\x04\x91\x00\x00\x01\x7f\x00\x00\x05\xac\x00\x00\x02\xb9\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDMgHZ0MsAAgAAAAAANwAAAAAAAAbFAAAEPgAAAD8AAAAfAAAG
+vQAABDYAAAAAAAAAAAoAcQRYEgAAAHVzZV9pbnB1dF9mZWF0dXJlc3EFiVgLAAAAX192ZXJzaW9u
+X19xBksBWBAAAABjb250ZXh0X3NldHRpbmdzcQddcQhjb3Jhbmdld2lkZ2V0LnNldHRpbmdzCkNv
+bnRleHQKcQkpgXEKfXELKFgGAAAAdmFsdWVzcQx9cQ0oWBEAAABkb21haW5fcm9sZV9oaW50c3EO
+fXEPKFgMAAAAaGlzdF9jcmVkaXRvcRBLAYZxEVgJAAAAYXR0cmlidXRlcRJLAIZxE1gIAAAAcG91
+cGFuY2FxFEsBhnEVaBJLAYZxFlgNAAAAZGl2aWRhX2NhcnRhb3EXSwGGcRhoEksChnEZWAUAAABy
+ZW5kYXEaSwGGcRtoEksDhnEcWBQAAABzdGF0dXNfcmlzY29fcGFnYWRvcnEdSwGGcR5YBQAAAGNs
+YXNzcR9LAIZxIHVK/v///4ZxIWgGSwF1WAoAAABhdHRyaWJ1dGVzcSJ9cSMoaBBLAWgUSwFoF0sB
+aBpLAWgdSwF1WAUAAABtZXRhc3EkfXEldWJhdS4=
+</properties>
+		<properties format="literal" node_id="2">{'auto_apply': True, 'binary_trees': False, 'controlAreaVisible': True, 'learner_name': '', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x04~\x00\x00\x01^\x00\x00\x05\xc0\x00\x00\x02\xc3\x00\x00\x04\x86\x00\x00\x01}\x00\x00\x05\xb8\x00\x00\x02\xbb\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEQAAAGxpbmVfd2lkdGhfbWV0aG9kcQJL
+AlgOAAAAbWF4X25vZGVfd2lkdGhxA0uWWA4AAABtYXhfdHJlZV9kZXB0aHEESwBYEQAAAHJlZ3Jl
+c3Npb25fY29sb3JzcQVLAFgTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEGQzIB2dDLAAIAAAAAADcA
+AAAAAAAGxQAABD4AAAA/AAAAHwAABr0AAAQ2AAAAAAAAAAAKAHEHWAQAAAB6b29tcQhLBVgLAAAA
+X192ZXJzaW9uX19xCUsBWBAAAABjb250ZXh0X3NldHRpbmdzcQpdcQtjb3Jhbmdld2lkZ2V0LnNl
+dHRpbmdzCkNvbnRleHQKcQwpgXENfXEOKFgGAAAAdmFsdWVzcQ99cRAoWBIAAAB0YXJnZXRfY2xh
+c3NfaW5kZXhxEUsAaAlLAXVYBwAAAGNsYXNzZXNxEmNPcmFuZ2UuZGF0YS52YXJpYWJsZQpUdXBs
+ZUxpc3QKcRNYBAAAAGFsdG9xFFgFAAAAYmFpeG9xFVgIAAAAbW9kZXJhZG9xFodxF4VxGIFxGXVi
+YXUu
+</properties>
+		<properties format="literal" node_id="4">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x007\x00\x00\x00\x00\x00\x00\x06\xc5\x00\x00\x04&gt;\x00\x00\x00?\x00\x00\x00\x1f\x00\x00\x06\xbd\x00\x00\x046\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 1}</properties>
+		<properties format="pickle" node_id="5">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlx
+AkMyAdnQywACAAAAAAA3AAAAAAAABsUAAAQ+AAAAPwAAAB8AAAa9AAAENgAAAAAAAAAACgBxA1gL
+AAAAc2hvd19sZWdlbmRxBIhYDQAAAHNpemVfY2FsY19pZHhxBUsBWA4AAABzaXplX2xvZ19zY2Fs
+ZXEGSwJYEAAAAHRvb2x0aXBzX2VuYWJsZWRxB4hYCwAAAF9fdmVyc2lvbl9fcQhLAVgQAAAAY29u
+dGV4dF9zZXR0aW5nc3EJXXEKY29yYW5nZXdpZGdldC5zZXR0aW5ncwpDb250ZXh0CnELKYFxDH1x
+DShYBgAAAHZhbHVlc3EOfXEPKFgLAAAAZGVwdGhfbGltaXRxEEsEWBIAAAB0YXJnZXRfY2xhc3Nf
+aW5kZXhxEUsAaAhLAXVYBwAAAGNsYXNzZXNxEmNPcmFuZ2UuZGF0YS52YXJpYWJsZQpUdXBsZUxp
+c3QKcRNYBAAAAGFsdG9xFFgFAAAAYmFpeG9xFVgIAAAAbW9kZXJhZG9xFodxF4VxGIFxGXViYXUu
+</properties>
+		<properties format="pickle" node_id="6">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYCwAAAGRlcHRoX2xpbWl0cQJLBVgTAAAA
+c2F2ZWRXaWRnZXRHZW9tZXRyeXEDQzIB2dDLAAIAAAAAADcAAAAAAAAGxQAABD4AAAA/AAAAHwAA
+Br0AAAQ2AAAAAAAAAAAKAHEEWA0AAABzaXplX2NhbGNfaWR4cQVLAVgEAAAAem9vbXEGR0By4AAA
+AAAAWAsAAABfX3ZlcnNpb25fX3EHSwJYEAAAAGNvbnRleHRfc2V0dGluZ3NxCF1xCWNvcmFuZ2V3
+aWRnZXQuc2V0dGluZ3MKQ29udGV4dApxCimBcQt9cQwoWAYAAAB2YWx1ZXNxDX1xDihYDgAAAHNl
+bGVjdGVkX2luZGV4cQ9OWBIAAAB0YXJnZXRfY2xhc3NfaW5kZXhxEEsAaAdLAnVYBwAAAGNsYXNz
+ZXNxEWNPcmFuZ2UuZGF0YS52YXJpYWJsZQpUdXBsZUxpc3QKcRJYBAAAAGFsdG9xE1gFAAAAYmFp
+eG9xFFgIAAAAbW9kZXJhZG9xFYdxFoVxF4FxGHViYXUu
+</properties>
+		<properties format="literal" node_id="7">{'auto_apply': True, 'controlAreaVisible': True, 'index_output': 0, 'learner_name': '', 'max_depth': 3, 'max_features': 5, 'min_samples_split': 5, 'n_estimators': 10, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x04d\x00\x00\x01^\x00\x00\x05\xd9\x00\x00\x02\xc3\x00\x00\x04l\x00\x00\x01}\x00\x00\x05\xd1\x00\x00\x02\xbb\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', 'use_max_depth': False, 'use_max_features': False, 'use_min_samples_split': True, 'use_random_state': False, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

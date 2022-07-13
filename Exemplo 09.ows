@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(144.0, 205.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="Inadimplentes - Calibração" version="" />
+		<node id="1" name="Select Columns" position="(340.0, 206.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns" version="" />
+		<node id="2" name="Tree" position="(538.0, 205.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" title="Tree" version="" />
+		<node id="3" name="Tree Viewer" position="(736.0, 201.0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeGraph" title="Tree Viewer" version="" />
+		<node id="4" name="Data Table" position="(334.0, 60.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="5" name="CSV File Import" position="(148.0, 430.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="Inadimplentes - teste" version="" />
+		<node id="6" name="Data Table" position="(337.0, 312.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="7" name="Predictions" position="(748.0, 426.0)" project_name="Orange3" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" title="Predictions" version="" />
+		<node id="8" name="Data Table" position="(931.0, 302.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Tree" sink_node_id="3" source_channel="Model" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="4" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="4" sink_channel="Data" sink_node_id="6" source_channel="Data" source_node_id="5" />
+		<link enabled="true" id="5" sink_channel="Data" sink_node_id="7" source_channel="Data" source_node_id="5" />
+		<link enabled="true" id="6" sink_channel="Predictors" sink_node_id="7" source_channel="Model" source_node_id="2" />
+		<link enabled="true" id="7" sink_channel="Data" sink_node_id="8" source_channel="Predictions" source_node_id="7" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('D:/OneDrive/Orange/orange_risco_inadimplencia.txt', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'D:/OneDrive/Orange', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x04\x89\x00\x00\x01`\x00\x00\x05\xb4\x00\x00\x02\xc1\x00\x00\x04\x91\x00\x00\x01\x7f\x00\x00\x05\xac\x00\x00\x02\xb9\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDMgHZ0MsAAgAAAAAANwAAAAAAAAbFAAAEPgAAAD8AAAAfAAAG
+vQAABDYAAAAAAAAAAAoAcQRYEgAAAHVzZV9pbnB1dF9mZWF0dXJlc3EFiVgLAAAAX192ZXJzaW9u
+X19xBksBWBAAAABjb250ZXh0X3NldHRpbmdzcQddcQgoY29yYW5nZXdpZGdldC5zZXR0aW5ncwpD
+b250ZXh0CnEJKYFxCn1xCyhYBgAAAHZhbHVlc3EMfXENKFgRAAAAZG9tYWluX3JvbGVfaGludHNx
+Dn1xDyhYDAAAAGhpc3RfY3JlZGl0b3EQSwGGcRFYCQAAAGF0dHJpYnV0ZXESSwCGcRNYCAAAAHBv
+dXBhbmNhcRRLAYZxFWgSSwGGcRZYDQAAAGRpdmlkYV9jYXJ0YW9xF0sBhnEYaBJLAoZxGVgFAAAA
+cmVuZGFxGksBhnEbaBJLA4ZxHFgUAAAAc3RhdHVzX3Jpc2NvX3BhZ2Fkb3JxHUsBhnEeWAUAAABj
+bGFzc3EfSwCGcSB1Sv7///+GcSFoBksBdVgKAAAAYXR0cmlidXRlc3EifXEjKGgQSwFoFEsBaBdL
+AWgaSwFoHUsBdVgFAAAAbWV0YXNxJH1xJXViaAkpgXEmfXEnKGgMfXEoKFgRAAAAZG9tYWluX3Jv
+bGVfaGludHNxKX1xKihYDAAAAGhpc3RfY3JlZGl0b3ErSwGGcSxYCQAAAGF0dHJpYnV0ZXEtSwCG
+cS5YCAAAAHBvdXBhbmNhcS9LAYZxMGgtSwGGcTFYDQAAAGRpdmlkYV9jYXJ0YW9xMksBhnEzaC1L
+AoZxNFgFAAAAcmVuZGFxNUsBhnE2aC1LA4ZxN1gUAAAAc3RhdHVzX3Jpc2NvX3BhZ2Fkb3JxOEsB
+hnE5WAUAAABjbGFzc3E6SwCGcTt1Sv7///+GcTxoBksBdWgifXE9KGgrSwFoL0sBaDJLAWg1SwFo
+OEsBdWgkfXE+dWJldS4=
+</properties>
+		<properties format="literal" node_id="2">{'auto_apply': True, 'binary_trees': False, 'controlAreaVisible': True, 'learner_name': '', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x04~\x00\x00\x01^\x00\x00\x05\xc0\x00\x00\x02\xc3\x00\x00\x04\x86\x00\x00\x01}\x00\x00\x05\xb8\x00\x00\x02\xbb\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEQAAAGxpbmVfd2lkdGhfbWV0aG9kcQJL
+AlgOAAAAbWF4X25vZGVfd2lkdGhxA0uWWA4AAABtYXhfdHJlZV9kZXB0aHEESwBYEQAAAHJlZ3Jl
+c3Npb25fY29sb3JzcQVLAFgTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEGQzIB2dDLAAIAAAAAADcA
+AAAAAAAGxQAABD4AAAA/AAAAHwAABr0AAAQ2AAAAAAAAAAAKAHEHWAQAAAB6b29tcQhLBVgLAAAA
+X192ZXJzaW9uX19xCUsBWBAAAABjb250ZXh0X3NldHRpbmdzcQpdcQtjb3Jhbmdld2lkZ2V0LnNl
+dHRpbmdzCkNvbnRleHQKcQwpgXENfXEOKFgGAAAAdmFsdWVzcQ99cRAoWBIAAAB0YXJnZXRfY2xh
+c3NfaW5kZXhxEUsAaAlLAXVYBwAAAGNsYXNzZXNxEmNPcmFuZ2UuZGF0YS52YXJpYWJsZQpUdXBs
+ZUxpc3QKcRNYBAAAAGFsdG9xFFgFAAAAYmFpeG9xFVgIAAAAbW9kZXJhZG9xFodxF4VxGIFxGXVi
+YXUu
+</properties>
+		<properties format="literal" node_id="4">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x007\x00\x00\x00\x00\x00\x00\x06\xc5\x00\x00\x04&gt;\x00\x00\x00?\x00\x00\x00\x1f\x00\x00\x06\xbd\x00\x00\x046\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="5">{'_session_items': [('D:/OneDrive/Orange/Teste-Risco Inadimplencia.txt', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('D:/OneDrive/Orange/orange_risco_inadimplencia.txt', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 5, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'D:/OneDrive/Orange', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x04\x89\x00\x00\x01`\x00\x00\x05\xb4\x00\x00\x02\xc1\x00\x00\x04\x91\x00\x00\x01\x7f\x00\x00\x05\xac\x00\x00\x02\xb9\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', '__version__': 1}</properties>
+		<properties format="literal" node_id="6">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x007\x00\x00\x00\x00\x00\x00\x06\xc5\x00\x00\x04&gt;\x00\x00\x00?\x00\x00\x00\x1f\x00\x00\x06\xbd\x00\x00\x046\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 1}</properties>
+		<properties format="pickle" node_id="7">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlx
+AkMyAdnQywACAAAAAAA3AAAAAAAABsUAAAQ+AAAAPwAAAB8AAAa9AAAENgAAAAAAAAAACgBxA1gL
+AAAAc2NvcmVfdGFibGVxBH1xBVgMAAAAc2hvd25fc2NvcmVzcQZjYnVpbHRpbnMKc2V0CnEHXXEI
+KFgDAAAAQVVDcQlYAgAAAEYxcQpYAwAAAE1BRXELWAYAAABSZWNhbGxxDFgDAAAATVNFcQ1YCQAA
+AFByZWNpc2lvbnEOWAIAAABSMnEPWAIAAABDQXEQWAQAAABSTVNFcRFlhXESUnETc1gLAAAAX192
+ZXJzaW9uX19xFEsBWBAAAABjb250ZXh0X3NldHRpbmdzcRVdcRZ1Lg==
+</properties>
+		<properties format="literal" node_id="8">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x007\x00\x00\x00\x00\x00\x00\x06\xc5\x00\x00\x04&gt;\x00\x00\x00?\x00\x00\x00\x1f\x00\x00\x06\xbd\x00\x00\x046\x00\x00\x00\x00\x00\x00\x00\x00\n\x00', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
